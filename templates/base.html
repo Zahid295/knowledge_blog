@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Tech Knowledge Blog{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <h1>Tech Knowledge Blog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}" class="button">Home</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'account_logout' %}" class="button">Logout</a></li>
+                {% else %}
+                <li><a href="{% url 'account_signup' %}" class="button">Sign Up</a></li>
+                <li><a href="{% url 'account_login' %}" class="button">Login</a></li>
+                {% endif %}
+                <li><a href="{% url 'posts' %}" class="button">Posts</a></li>
+                <li><a href="{% url 'create_post' %}" class="button">Create Post</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+
+
+
+        {% endblock %}
+    </main>
+    <footer class="footer">
+        © 2024 Tech Knowledge Blog
+    </footer>
+</body>
+
+</html>

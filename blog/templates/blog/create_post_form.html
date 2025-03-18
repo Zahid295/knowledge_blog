@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<form id="create-post-form">
+  <label for="title">Title:</label><br>
+  <input type="text" id="title" name="title"><br>
+  <label for="content">Content:</label><br>
+  <textarea id="content" name="content"></textarea><br>
+  <!-- Add other fields as needed -->
+  <input type="submit" value="Create Post">
+</form>
+
+<script src="{% static 'script.js' %}"></script> <!-- Include your JavaScript file -->
+{% endblock %}

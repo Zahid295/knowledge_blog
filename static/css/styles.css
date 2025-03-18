@@ -1,0 +1,231 @@
+body, html {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Header styles */
+.header {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Navigation stylyes */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Button stylyes */
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Footer stylyes */
+footer {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Input styling */
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Hover to links */
+a:hover {
+    text-decoration: underline;
+}
+/* style for signup form */
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Styling signup button */
+.signup-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Styles for login form */
+.login-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Styling the login button */
+.login-form button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.blog-title {
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+
+.blog-description {
+    height: 40px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+
+/* Styles for Layout */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+
+/* Styles for Lists */
+
+.post-list,
+
+.category-list {
+    height:60px;
+    list-style: none;
+    padding: 0;
+
+}
+
+
+.post-link,
+
+.category-link {
+    text-decoration: none;
+    color: #0074D9;
+    transition: color 0.3s;
+
+}
+
+
+.post-link:hover,
+
+.category-link:hover {
+    color: #FF4136;
+
+}
+
+/* CSS styles for Large screens */
+@media only screen and (min-width: 600px) {
+    .signup, .login, .logout {
+      width: 50%;
+      margin: auto;
+    }
+  }
+
+/* CSS styles for Medium screens */
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+    .signup, .login, .logout{
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+/* CSS styles for Small screens */
+@media only screen and (max-width: 399px) {
+    .signup, .login, .logout{
+      width: 90%;
+      margin: auto;
+    }
+  }
